@@ -1,0 +1,50 @@
+/*
+* SASS preserves units in arithmetic operations. For example:
+* 12em * 0 = 0em. This function return the unit of a numeric value.
+*/
+
+@use "sass:math";
+
+@function extractUnit($number) {
+  @return $number * 0 + 1;
+}
+
+@function stripUnit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return math.div($number, extractUnit($number));
+  }
+
+  @return $number;
+}
+
+@function singleUnitRem($value, $font-size-base) {
+  @if (extractUnit($value) != 1px) {
+    @return $value;
+  }
+
+  $converted: math.div($value, $font-size-base);
+
+  @return stripUnit($converted) * 1rem;
+}
+
+@function multipleUnitsRem($values, $font-size-base) {
+  $rem-values: ();
+
+  @each $value in $values {
+    $rem-values: append($rem-values, singleUnitRem($value, $font-size-base));
+  }
+
+  @return $rem-values;
+}
+
+// height: pxToRem(652px); -> height: 40.75rem;
+// padding: pxToRem((20px, 40px, 10px));  -> padding: 1.25rem 2.5rem 0.625rem;
+@function pxToRem($px, $font-size-base: 16px) {
+  @if type-of($px) == 'number' {
+    @return singleUnitRem($px, $font-size-base);
+  } @else if type-of($px) == 'list' {
+    @return multipleUnitsRem($px, $font-size-base);
+  } @else {
+    @return $px;
+  }
+}

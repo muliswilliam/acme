@@ -1,0 +1,70 @@
+@import './initial-variables.scss';
+
+html,
+body {
+  height: 100%;
+  background-color: $athens-gray;
+}
+
+body::-webkit-scrollbar {
+  width: pxtoRem(6px);
+}
+
+body::-webkit-scrollbar-track {
+  background-color: $athens-gray;
+  border-radius: 100px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $mischka;
+  border-radius: pxtoRem(100px);
+}
+
+#__next {
+  height: 100%;
+}
+
+h1 {
+  font-size: $size-2;
+  line-height: pxtoRem(56.08px);
+}
+
+h2 {
+  font-size: $size-3;
+}
+
+h3 {
+  font-size: $size-4;
+}
+
+h4 {
+  font-size: $size-5;
+}
+
+h5 {
+  font-size: $size-6;
+}
+
+h6 {
+  font-size: $size-8;
+}
+
+p {
+  font-size: $size-7;
+  line-height: pxtoRem(21.63px);
+}
+
+.columns {
+  &.is-fullheight {
+    min-height: calc(100vh - (#{$navbar-height} - 0.75rem));
+    max-height: calc(100vh - (#{$navbar-height} - 0.75rem));
+    height: calc(100vh - (#{$navbar-height} - 0.75rem));
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+
+    .column {
+      // overflow-y: auto;
+    }
+  }
+}

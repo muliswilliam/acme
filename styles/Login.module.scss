@@ -1,0 +1,82 @@
+@import 'scss/initial-variables';
+@import 'scss/partials';
+@import '~bulma/sass/utilities/mixins';
+
+.left {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: $aliceblue;
+
+  @include tablet {
+    height: 100vh;
+  }
+
+  &__heading {
+    color: $black-solid-100;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: pxToRem(16px);
+  }
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow: visible;
+  height: 100vh;
+  background-color: $white-solid-100;
+
+  @include tablet {
+    justify-content: center;
+  }
+
+  &__intro {
+    text-align: center;
+    margin-bottom: pxToRem(30px);
+
+    @include mobile {
+      margin-top: pxToRem(30px);
+    }
+
+    h3 {
+      font-weight: 500;
+      font-size: pxToRem(28px);
+    }
+
+    p {
+      font-weight: 400;
+      font-size: pxToRem(17px);
+      color: $black-solid-60;
+    }
+  }
+}
+
+.loginForm {
+  @include mobile {
+    width: pxToRem(300px);
+  }
+
+  @include tablet {
+    width: pxToRem(380px);
+  }
+
+  label {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: pxToRem(12px);
+  }
+
+  &__forgotPassword {
+    display: inline-block;
+    color: $black-solid-100;
+    text-decoration: underline;
+    margin-bottom: pxToRem(30px);
+
+    &:hover {
+      color: $cornflowerblue;
+    }
+  }
+}

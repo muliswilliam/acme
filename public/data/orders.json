@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "customerName": "Oralla Blunsden",
+    "amount": null,
+    "dateCreated": "10/2/2020"
+  },
+  {
+    "id": 2,
+    "customerName": "Price Bugge",
+    "amount": null,
+    "dateCreated": "2/15/2021"
+  },
+  {
+    "id": 3,
+    "customerName": "Elwin Baumer",
+    "amount": null,
+    "dateCreated": "3/16/2021"
+  },
+  {
+    "id": 4,
+    "customerName": "Vitia Sickamore",
+    "amount": null,
+    "dateCreated": "4/19/2021"
+  },
+  {
+    "id": 5,
+    "customerName": "Waneta Cardew",
+    "amount": null,
+    "dateCreated": "5/8/2021"
+  },
+  {
+    "id": 6,
+    "customerName": "Nathanial Cawtheray",
+    "amount": null,
+    "dateCreated": "6/25/2021"
+  },
+  {
+    "id": 7,
+    "customerName": "Pier Spraggon",
+    "amount": null,
+    "dateCreated": "7/30/2021"
+  },
+  {
+    "id": 8,
+    "customerName": "Ax Hinckes",
+    "amount": null,
+    "dateCreated": "12/11/2020"
+  },
+  {
+    "id": 9,
+    "customerName": "Humfrid Carrier",
+    "amount": null,
+    "dateCreated": "5/13/2021"
+  },
+  {
+    "id": 10,
+    "customerName": "Asher Spelman",
+    "amount": null,
+    "dateCreated": "7/30/2021"
+  }
+]

@@ -1,0 +1,47 @@
+@import 'scss/initial-variables';
+@import 'scss/partials';
+@import '~bulma/sass/utilities/mixins';
+
+.customerOrder {
+  display: flex;
+  align-items: center;
+  background: url('/images/order-page-bg.jpg');
+  color: #262626;
+  height: 100vh;
+
+  &__formWrapper {
+    background: $white-solid-100;
+    border-radius: 5px;
+    padding: pxToRem(24px);
+  }
+
+  table {
+    display: block;
+    margin: pxToRem(15px);
+  }
+
+  &__Yorder {
+    margin-top: pxToRem(15px);
+    padding: pxToRem(10px 20px);
+    border: 1px solid $black-solid-08;
+  }
+
+  &__Yorder > div {
+    padding: pxToRem(15px 0);
+  }
+
+  th {
+    border-bottom: 1px solid $black-solid-08;
+    padding: 10px 0;
+  }
+
+  tr > td:nth-child(2) {
+    text-align: right;
+    color: $cornflowerblue;
+  }
+
+  td {
+    border-bottom: 1px solid $black-solid-08;
+    padding: 25px 25px 25px 0;
+  }
+}

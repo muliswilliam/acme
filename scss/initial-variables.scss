@@ -1,0 +1,118 @@
+// Colors
+// Name the colors with the help of https://chir.ag/projects/name-that-color/#FD4A2A
+
+$black: hsl(0, 0%, 4%) !default;
+$black-bis: hsl(0, 0%, 7%) !default;
+$black-ter: hsl(0, 0%, 14%) !default;
+
+$grey-darker: hsl(0, 0%, 21%) !default;
+
+$grey-dark: hsl(0, 0%, 29%) !default;
+$grey: hsl(0, 0%, 48%) !default;
+$grey-light: hsl(0, 0%, 71%) !default;
+$grey-lighter: hsl(0, 0%, 86%) !default;
+$grey-lightest: hsl(0, 0%, 93%) !default;
+
+$white-ter: hsl(0, 0%, 96%) !default;
+$white-bis: hsl(0, 0%, 98%) !default;
+$white: hsl(0, 0%, 100%) !default;
+
+$orange: hsl(14, 100%, 53%) !default;
+$yellow: hsl(44, 100%, 77%) !default;
+$green: hsl(153, 53%, 53%) !default;
+$turquoise: hsl(171, 100%, 41%) !default;
+$cyan: hsl(207, 61%, 53%) !default;
+$blue: hsl(229, 53%, 53%) !default;
+$purple: hsl(271, 100%, 71%) !default;
+$red: hsl(348, 86%, 61%) !default;
+
+// Typography
+
+$family-sans-serif: BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto',
+  'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  'Helvetica', 'Arial', sans-serif !default;
+$family-monospace: monospace !default;
+$render-mode: optimizeLegibility !default;
+
+$size-1: 3rem !default;
+$size-2: 2.5rem !default;
+$size-3: 2rem !default;
+$size-4: 1.5rem !default;
+$size-5: 1.25rem !default;
+$size-6: 1rem !default;
+$size-7: 0.875rem !default;
+$size-8: 0.75rem !default;
+
+$navbar-height: 3.25rem !default;
+$navbar-padding-horizontal: 4rem !default;
+$navbar-padding-vertical: 2rem !default;
+
+$weight-light: 300 !default;
+$weight-normal: 400 !default;
+$weight-medium: 500 !default;
+$weight-semibold: 600 !default;
+$weight-bold: 700 !default;
+
+// Spacing
+
+$block-spacing: 1.5rem !default;
+
+// Responsiveness
+
+// The container horizontal gap, which acts as the offset for breakpoints
+$gap: 32px !default;
+// 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
+$tablet: 769px !default;
+// 960px container + 4rem;
+$desktop: 960px + (2 * $gap) !default;
+// 1152px container + 4rem
+$widescreen: 1152px + (2 * $gap) !default;
+$widescreen-enabled: true !default;
+// 1344px container + 4rem
+$fullhd: 1344px + (2 * $gap) !default;
+$fullhd-enabled: true !default;
+
+$max-content-width: 1287px;
+
+// Miscellaneous
+
+$easing: ease-out !default;
+$radius-small: 2px !default;
+$radius: 3px !default;
+$radius-large: 6px !default;
+$radius-extra-large: 63px !default;
+$radius-rounded: 9999px !default;
+$speed: 86ms !default;
+
+// Flags
+$variable-columns: true !default;
+$rtl: false !default;
+
+// Colors
+$aliceblue: hsl(220, 89%, 96%);
+$athens-gray: hsl(260, 14%, 96%);
+$black-solid-100: hsla(0, 0%, 0%, 1);
+$black-solid-90: hsla(0, 0%, 0%, 0.9);
+$black-solid-80: hsla(0, 0%, 0%, 0.8);
+$black-solid-70: hsla(0, 0%, 0%, 0.7);
+$black-solid-60: hsla(0, 0%, 0%, 0.6);
+$black-solid-55: hsla(0, 0%, 0%, 0.55);
+$black-solid-50: hsla(0, 0%, 0%, 0.5);
+$black-solid-40: hsla(0, 0%, 0%, 0.4);
+$black-solid-30: hsla(0, 0%, 0%, 0.3);
+$black-solid-25: hsla(0, 0%, 0%, 0.25);
+$black-solid-15: hsla(0, 0%, 0%, 0.15);
+$black-solid-12: hsla(0, 0%, 0%, 0.12);
+$black-solid-10: hsla(0, 0%, 0%, 0.1);
+$black-solid-08: hsla(0, 0%, 0%, 0.08);
+$black-solid-03: hsla(0, 0%, 0%, 0.03);
+$black-solid-02: hsla(0, 0%, 0%, 0.02);
+$cornflowerblue: hsl(221, 99%, 65%);
+$cornflowerblue-64: hsl(222, 67%, 49%);
+$white-solid-100: hsla(0, 0%, 100%, 1);
+$mischka: hsla(260, 15%, 88%, 1);
+$white-solid-95: hsla(0, 0%, 95%, 1);
+$white-solid-80: hsla(0, 0%, 100%, 0.8);
+$white-solid-60: hsla(0, 0%, 100%, 0.6);
+$white-solid-40: hsla(0, 0%, 100%, 0.4);
+$white-solid-20: hsla(0, 0%, 100%, 0.2);

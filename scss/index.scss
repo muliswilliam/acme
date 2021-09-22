@@ -1,0 +1,44 @@
+// Bulma
+@import './initial-variables.scss';
+@import './derived-variables.scss';
+@import '~bulma-responsive-tables/bulma-responsive-tables';
+
+// Import only what you need from Bulma
+@import '~bulma/sass/utilities/_all.sass';
+@import '~bulma/sass/base/_all.sass';
+@import '~bulma/sass/grid/columns.sass';
+@import '~bulma/sass/helpers/_all.sass';
+@import '~bulma/sass/elements/button.sass';
+@import '~bulma/sass/elements/container.sass';
+@import '~bulma/sass/elements/icon.sass';
+@import '~bulma/sass/elements/image.sass';
+@import '~bulma/sass/elements/tag.sass';
+@import '~bulma/sass/elements/table.sass';
+@import '~bulma/sass/form/_all.sass';
+@import '~bulma/sass/components/navbar.sass';
+@import '~bulma/sass/components/card.sass';
+@import '~bulma/sass/components/dropdown.sass';
+@import '~bulma/sass/components/modal.sass';
+@import '~bulma/sass/components/menu.sass';
+@import '~bulma/sass/layout/section.sass';
+
+// Custom
+@import './partials/';
+@import './overrides.scss';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
+
+.container {
+  @include tablet {
+    padding: 0 pxToRem(12px);
+    margin: 0 auto;
+  }
+
+  @include desktop {
+    padding: 0;
+  }
+
+  @include mobile {
+    padding: 0 pxToRem(12px);
+    margin: 0 auto;
+  }
+}

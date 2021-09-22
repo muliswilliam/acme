@@ -1,0 +1,40 @@
+@import 'initial-variables';
+
+$primary: $cornflowerblue !default;
+
+$light: $white !default;
+$dark: $grey-darker !default;
+
+// Typography
+
+$size-small: $size-7 !default;
+$size-normal: $size-6 !default;
+$size-medium: $size-5 !default;
+$size-large: $size-4 !default;
+
+// Navbar
+$navbar-item-hover-color: $primary !default;
+$navbar-item-hover-background-color: transparent !default;
+$navbar-box-shadow-size: 20px 20px 20px 0 !default;
+$navbar-box-shadow-color: $black-solid-100 !default;
+
+//Modals
+$modal-card-head-background-color: $white-solid-100;
+$modal-card-head-border-bottom: 1px solid $black-solid-08;
+$modal-card-foot-border-top: 1px solid $black-solid-08;
+$modal-card-title-size: $size-5;
+
+//Inputs
+$input-border-color: $black-solid-08;
+$input-hover-color: $black-solid-10;
+
+// Labels
+$label-color: $black-solid-80;
+$label-weight: 400;
+
+// Table
+$table-cell-border: 1px solid $black-solid-03;
+$table-background-color: $white-solid-100;
+
+// to get more variables, go to
+// https://raw.githubusercontent.com/jgthms/bulma/master/sass/utilities/derived-variables.sass
